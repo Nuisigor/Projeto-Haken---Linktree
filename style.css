@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+:root{
+    --bgcolorlight: #dbd9d9;
+    --colorlight : #00001a;
+    --buttoncollorlight: #000061;
+    --buttoncolorhoverlight: #000085;
+    --colorlightcontrast: #ffffff;
+}
+
+body{
+    background-color: var(--bgcolorlight);
+    color: var(--colorlight);
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+div{
+    padding: 100px 0px 0 0px;
+}
+
+button{
+    width: 10%;
+    height: 5%;
+    align-self: flex-end;
+}
+
+.dark_mode{
+    background-color: #000033;
+}
+
+.Info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0px;
+}
+
+.Info > img{
+    border-radius: 50%;
+    border-color: blue;
+    border: 10px;
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Links > a{
+    width: 35%;
+    background-color: var(--buttoncollorlight);
+    color: var(--colorlightcontrast);
+    box-sizing: border-box;
+    padding: 15px;
+    border: solid 3px var(--colorlight);
+    text-align: center;
+    text-decoration: none;
+}
+
+.Links > a:hover{
+    background-color: var(--buttoncolorhoverlight);
+}
+
+.ButtonLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ButtonLinks a img{
+    width: 50px;
+    height: 50px;
+}
