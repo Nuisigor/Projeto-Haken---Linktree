@@ -3,9 +3,14 @@
 :root{
     --bgcolorlight: #dbd9d9;
     --colorlight : #00001a;
-    --buttoncollorlight: #000061;
+    --buttoncolorlight: #000061;
     --buttoncolorhoverlight: #000085;
     --colorlightcontrast: #ffffff;
+
+    --bgcolordark: #000066;
+    --colordark: #dbd9d9;
+    --buttoncolordark: #000033;
+    --buttoncolorhoverdark: #dbd9d9;
 }
 
 body{
@@ -15,13 +20,9 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Titillium Web', sans-serif;
+    gap: 50px
 }
 
-
-
-div{
-    padding: 100px 0px 0 0px;
-}
 
 button{
     width: 10%;
@@ -29,8 +30,20 @@ button{
     align-self: flex-end;
 }
 
-.dark_mode{
-    background-color: #000033;
+.DarkMode{
+    background-color: var(--bgcolordark);
+    color: var(--colordark);
+}
+
+.DarkMode .Links a{
+    background-color: var(--buttoncolordark);
+    color: var(--colordarkcontrast);
+    border: solid 3px var(--colordark)
+}
+
+.DarkMode .Links a:hover{
+    background-color: var(--buttoncolorhoverdark);
+    color: var(--colorlight)
 }
 
 .Info{
@@ -42,6 +55,8 @@ button{
 }
 
 .Info > img{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border-color: blue;
     border: 10px;
@@ -57,7 +72,7 @@ button{
 
 .Links > a{
     width: 35%;
-    background-color: var(--buttoncollorlight);
+    background-color: var(--buttoncolorlight);
     color: var(--colorlightcontrast);
     box-sizing: border-box;
     padding: 15px;
@@ -81,3 +96,30 @@ button{
     width: 50px;
     height: 50px;
 }
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0rem solid transparent;
+    border-radius: 3rem;
+  }
+  
+  .bn37 {
+    border-color: transparent;
+    background-color: #fff;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .bn37:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
